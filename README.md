@@ -1,2 +1,2 @@
-# state_rankings
-Phase 3 project
+State rankings
+By Matt Dittes and Amanda Sakuma
