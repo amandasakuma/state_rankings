@@ -4,7 +4,7 @@ import RankingsResults from './RankingsResults'
 export default function RankingsCategories() {
   return (
     <main>
-      <div className="category-inquiry">
+      <div className="ranking-category-container">
         <div className="state-choice">
           <h3>Enter state:</h3>
           <select className='states'>

@@ -16,11 +16,6 @@ h1 {
   text-align: center;
 }
 
-.header-buttons {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .state-choice {
   display: flex;
   margin: auto; 
@@ -32,7 +27,7 @@ h1 {
 margin: 20px; 
 } 
 
-.category-inquiry {
+.ranking-category-container {
   padding: 10px; 
   margin: 20px;
   background-color: grey;
@@ -56,10 +51,6 @@ margin: 20px;
     text-align: center;
     transition: all 0.2s;
 }
-
-/* .ranking-results {
-  margin-left: 100px
-} */
 
 .ultimate-state-ranking {
   text-align: center;
