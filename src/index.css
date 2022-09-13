@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  text-align: center;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.state-choice {
+  display: flex;
+  margin: auto; 
+  width: 30%;
+  padding: 10px
+}
+
+.states {
+margin: 20px; 
+} 
+
+.category-inquiry {
+  padding: 10px; 
+  margin: 20px;
+  background-color: grey;
+}
+
+
+.category-button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+
+.category-buttons {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 5px 0.3em 5px;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #444444;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+/* .ranking-results {
+  margin-left: 100px
+} */
+
+.ultimate-state-ranking {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.ranking-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-left: 100px
+}
