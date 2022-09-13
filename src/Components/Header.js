@@ -6,17 +6,6 @@ export default function Header() {
   
 return (
     <div className="header">
-      {/* <div className="header-buttons">
-
-        <p className="rankings-categories" >
-          State rankings
-        </p>
-
-        <p className="pref-categories">
-          <PrefCategories />
-        </p>
-
-      </div> */}
       <div className="category-container">
         <RankingsCategories />
       </div>
