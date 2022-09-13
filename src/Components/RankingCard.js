@@ -1,13 +1,10 @@
 import React from 'react'
 
-export default function RankingCard() {
+export default function RankingCard({state}) {
   return (
     <div className='ranking-card'>
-      <h4>Category Name</h4>
       <ol>
-        <li>State</li>
-        <li>State</li>
-        <li>State</li>
+        <ul>{state.id}. {state.name}</ul>
       </ol>
     </div>
   )

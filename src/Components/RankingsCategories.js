@@ -1,20 +1,25 @@
 import React from 'react'
 import RankingsResults from './RankingsResults'
 
-export default function RankingsCategories() {
+export default function RankingsCategories({states}) {
+
+
   return (
     <main>
       <div className="ranking-category-container">
         <div className="state-choice">
-          <h3>Enter state:</h3>
+          <h3>Select categories:</h3>
           <select className='states'>
-            <option value="states">States</option>
+          {
+          states.map((state) => 
+            <option key={state.id} value={state.name}>{state.name}</option>  
+          )} 
           </select>
         </div>
 
         <div className='category-button-container'>
-          <button className='category-buttons'>Category 1</button>
-          <button className='category-buttons'>Category 2</button>
+          {/* <input type="radio" value="state-rankings" className='tabs' />Weed Legalized?
+          <input type="radio" value="state-rankings" className='tabs' />Cost of Living */}
           <button className='category-buttons'>Category 3</button>
           <button className='category-buttons'>Category 4</button>
           <button className='category-buttons'>Category 5</button>
@@ -23,7 +28,7 @@ export default function RankingsCategories() {
           <button className='reset-button'>reset</button>
       </div>
 
-      <RankingsResults />
+      <RankingsResults states={states}/>
     </main>
   )
 }
