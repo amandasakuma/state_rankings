@@ -2,21 +2,36 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import RankingsResults from './RankingsResults'
 
-export default function RankingsCategories({states}) {
-  const [rankings, setRankings] = useState([])
-  const [rankingsDisplay, setRankingsDisplay] = useState([])
+export default function RankingsCategories() {
+  const [temps, setTemp] = useState([])
+  const [cols, setCols] = useState([])
+  const [all, setAll] = useState({Temperature: [], LivingCost: []})
+  // const [rankings, setRankings] = useState([])
+  // const [state, setState] = useState([])
+  // const [rankingsDisplay, setRankingsDisplay] = useState([])
 
 
   useEffect(() => {
-    fetch("http://localhost:9292/")
+    // fetch("http://localhost:9292/temperatures")
+    //   .then((r) => r.json())
+    //   .then((data) => setTemp(data))
+    // fetch("http://localhost:9292/living_costs")
+    //   .then((r) => r.json())
+    //   .then((data) => setCols(data));
+  fetch("http://localhost:9292/")
       .then((r) => r.json())
-      .then((rankings) => setRankings(rankings));
+      .then((data) => {console.log(data); setAll(data)}) 
+
   }, [])
 
-  function handleRankingsDisplay () {
-    setRankingsDisplay((prevRankingsDisplay) => !prevRankingsDisplay)
-  }
-  const livingCost = rankings.LivingCost
+  // useEffect(() => {
+    
+  // }, [])
+
+
+  // function handleRankingsDisplay () {
+  //   setRankingsDisplay((prevRankingsDisplay) => !prevRankingsDisplay)
+  // }
 
   return (
     <main>
@@ -30,16 +45,13 @@ export default function RankingsCategories({states}) {
       </div>
 
       <RankingsResults 
-        rankings={rankings} 
-        states={states}
+        temps={all.Temperature}
+        cols={all.LivingCost}
         />
     </main>
   )
 }
 
-     {/* <button className='reset-button'>reset</button> */}
-    {/* <input type="radio" value="state-rankings" className='tabs' />Weed Legalized?
-          <input type="radio" value="state-rankings" className='tabs' />Cost of Living */}
 
 
    
