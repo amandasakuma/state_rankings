@@ -12,6 +12,8 @@ useEffect(() => {
     .then((states) => setStates(states));
 }, [])
 
+
+
 return (
     <div className="header">
       {/* <input type="radio" value="state-rankings" className='tabs' />State Rankings */}

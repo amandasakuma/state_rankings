@@ -32,7 +32,12 @@ margin: 20px;
   margin: 20px;
   background-color: grey;
 }
-
+/* 
+.ranking-category-container .button {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px;
+} */
 
 .category-button-container {
   display: flex;

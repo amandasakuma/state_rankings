@@ -1,10 +1,21 @@
-import React from 'react'
+import React
+// {useState} 
+from 'react'
 
-export default function RankingCard({state}) {
+
+export default function RankingCard({ranking}) {
+  // const [display, setDisplay] = useState()
+
+  // function handleDisplay(){
+
+  // }
+
   return (
     <div className='ranking-card'>
       <ol>
-        <ul>{state.id}. {state.name}</ul>
+        <ul>{ranking.Temperature.id}. {ranking.Temperature.state_name} 
+          <p>Cost index: {ranking.cost_index}</p>
+        </ul>
       </ol>
     </div>
   )
