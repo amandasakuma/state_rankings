@@ -47,9 +47,9 @@ const handleSubmitComment = (e) => {
       <div>
         <ol>
           {allState.name}
-          {allState.life_expectancy_id}
+          {/* {allState.life_expectancy_id} */}
           {/* .......... */}
-      <form 
+      {/* <form 
         className='add-comment'
         onSubmit={handleSubmitComment}>
         <textarea 
@@ -58,7 +58,7 @@ const handleSubmitComment = (e) => {
           onChange={(e) => setNewComment(e.target.value)}>
         </textarea>                
         <input type="submit" value='Notes'></input>            
-    </form>
+    </form> */}
         </ol>
       </div>
           {/* <form >
