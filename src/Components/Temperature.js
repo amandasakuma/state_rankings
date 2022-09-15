@@ -13,7 +13,8 @@ export default function Temperature() {
    const tempList = temps.map((temp => {
       return (<li>
               <h3 key={temp.id} temp={temp}>{temp.state_name}</h3>
-              <p>Temp scale {temp.temp_scale}</p>
+              <p>Average Temperature: {temp.temperature}°F</p>
+              <p>Temp Scale: {temp.temp_scale}</p>
               </li>
             )              
     }))

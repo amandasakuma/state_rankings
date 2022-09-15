@@ -14,8 +14,8 @@ export default function WeedLaws() {
       return (<li>
                  <h3 key={weed.id} weed={weed}>{weed.state_name}</h3>
                 <p>Legal Weed status: {weed.legal_weed_status}</p>
-                <p>Medical marijuana?: {weed.medicinal_weed_status}</p>
-                <p>Weed decriminalized?: {weed.decriminalized_weed_status}</p>
+                <p>Medical marijuana?: {weed.medicinal_weed_status ? "Yes" : "No"}</p>
+                <p>Weed decriminalized?: {weed.decriminalized_weed_status ? "Yes" : "No"}</p>
               </li>
             )              
     }))
