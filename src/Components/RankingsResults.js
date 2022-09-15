@@ -3,8 +3,11 @@ import RankingCard from './RankingCard'
 
 export default function RankingsResults({ allStates, onAddNote }) {
   // const [selectCategory, setSelectCategory] = useState(false)
-  const [noteData, setNoteData] = useState({note: "" });
-  const [newNote, setNewNote] = useState({note: ""})
+  const [noteData, setNoteData] = useState("");
+  const [newNote, setNewNote] = useState(
+      {comment: "",
+        state_id: stateId
+        })
 
   function handleNote(e){
     setNoteData({...noteData, [e.target.name]: e.target.value})
@@ -15,12 +18,15 @@ export default function RankingsResults({ allStates, onAddNote }) {
     e.preventDefault()
     console.log(noteData)
 
-    fetch('http://localhost:9292/note', {
+    fetch('http://localhost:9292/notes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(newNote)
+      body: JSON.stringify({
+          comment: comment,
+          state_id: stateId,
+        })
     })
     .then(r => r.json())
     .then(data => {

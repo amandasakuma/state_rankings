@@ -15,7 +15,7 @@ export default function RankingCard({allState, handleNote, handleFormSubmit}) {
           {/* <button>save me</button> */}
           <form >
             <input type="text" 
-                // value=
+                // value={value}
                 onChange={handleNote}
                 placeholder="Notes" />
         <button 
