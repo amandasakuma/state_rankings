@@ -9,7 +9,7 @@ export default function NavBar() {
             exact
             activeStyle={{
                 background: "#FFDA7A",
-                padding: "10px",
+                padding: "5px",
             }}
             className = "navTitles"
             >
@@ -20,7 +20,7 @@ export default function NavBar() {
             exact
             activeStyle={{
                 background: "#FFDA7A",
-                padding: "10px",
+                padding: "5px",
             }}
             className = "navTitles"
             >
@@ -31,7 +31,7 @@ export default function NavBar() {
             exact
             activeStyle={{
                 background: "#FFDA7A",
-                padding: "10px",
+                padding: "5px",
             }}
             className = "navTitles"
             >
@@ -42,7 +42,7 @@ export default function NavBar() {
             exact
             activeStyle={{
                 background: "#FFDA7A",
-                padding: "10px",
+                padding: "5px",
             }}
             className = "navTitles"
             >
@@ -53,7 +53,7 @@ export default function NavBar() {
             exact
             activeStyle={{
                 background: "#FFDA7A",
-                padding: "10px",
+                padding: "5px",
             }}
             className = "navTitles"
             >
