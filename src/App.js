@@ -7,7 +7,7 @@ import PrefCategories from './Components/PrefCategories';
 function App() {
   return (
   <div >
-    <h1 className="App-title">The ideal state</h1>
+    <h1 className="App-title">State Rankings</h1>
     <Header />
       <Switch>
         <Route path="/rankings">
