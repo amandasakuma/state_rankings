@@ -48,6 +48,17 @@ export default function NavBar() {
             >
         Life Expectancy
         </NavLink>
+          <NavLink
+            to="favorites"
+            exact
+            activeStyle={{
+                background: "#FFDA7A",
+                padding: "10px",
+            }}
+            className = "navTitles"
+            >
+        Favorites
+        </NavLink>
     </div>
   )
 }
