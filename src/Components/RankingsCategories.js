@@ -2,39 +2,43 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import RankingsResults from './RankingsResults'
 
-export default function RankingsCategories() {
+export default function RankingsCategories({
+// stateProfiles, states, temps
+}) {
+
   const [allStates, setAllStates] = useState([])
-  // const [temps, setTemp] = useState([])
-  // const [cols, setCols] = useState([])
-  // const [all, setAll] = useState({Temperature: [], LivingCost: []})
-  const [displayRankings, setDisplayRankings] = useState(true)
+//  const [all, setAll] = useState({State: []})
+  // const [displayRankings, setDisplayRankings] = useState(true)
 
   useEffect(() => {
-  fetch("http://localhost:9292/states")
+  fetch("http://localhost:9292/")
       .then((r) => r.json())
-      .then((data) => setAllStates(data))
+      .then((data) => {
+setAllStates({state: data.State, temp: data.Temperature})})
       // .then((data) => setAll(data)) 
   }, [])
 
-  function handleAddNote(newNote) {
-      setAllStates([...allStates, newNote])
-  }
 
-  // const list = all.Temperature( item => {
-  //   return (<li key={item.Temperature}>{item.Temperature}</li>)
-  // })
 
-  // const onSelectCategory = () => {
-  //   setDisplayRankings(displayRankings => !displayRankings)
+  // function handleAddNote(newNote) {
+  //     setAllStates([...allStates, newNote])
   // }
+
+  //  useEffect(() => {
+  // fetch("http://localhost:9292")
+  //     .then((r) => r.json())
+  //     .then((data) => {console.log(data); setAll(data)}) 
+  // }, [])
 
   return (
     <main>
       <RankingsResults 
+        // stateProfiles={stateProfiles}
+      //  states={all.StatStatee}
+        //   temps={temps}
+        // states={states}
         allStates={allStates}
-        onAddNote={handleAddNote}
-        // temps={all.Temperature}
-        // cols={all.LivingCost}
+        // onAddNote={handleAddNote}
         />
     </main>
   )

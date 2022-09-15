@@ -4,8 +4,17 @@ import RankingsCategories from './RankingsCategories';
 // import PrefCategories from './PrefCategories';
 
 export default function Header() {
-const [states, setStates] = useState([])
-const [stateSelection, setStateSelection] = useState("")
+//  const [all, setAll] = useState([])
+//  const [all, setAll] = useState({Temperature: [], LivingCost: [], State: [], LifeExpectancy: [], MarijuanaLaw: [] })
+
+//  useEffect(() => {
+//   fetch("http://localhost:9292")
+//       .then((r) => r.json())
+//       .then((data) => {console.log(data); setAll(data)}) 
+
+//   }, [])
+// const [states, setStates] = useState([])
+// const [stateSelection, setStateSelection] = useState("")
 
 // useEffect(() => {
 //   fetch("http://localhost:9292/states")
@@ -32,7 +41,14 @@ return (
         </div>
 
           {stateId} */}
-        <RankingsCategories states={states}/>
+        <RankingsCategories 
+            // stateProfiles={all}
+          // states={all.State}
+          // temps={all.Temperature}
+          // cols={all.LivingCost}
+          // life={all.LifeExpectancy}
+          // weed={all.MarijuanaLaw}
+          />
       </div>
   )
 }

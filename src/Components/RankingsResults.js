@@ -1,46 +1,68 @@
 import React, {useState} from 'react'
 import RankingCard from './RankingCard'
 
-export default function RankingsResults({ allStates, onAddNote }) {
-  // const [selectCategory, setSelectCategory] = useState(false)
-  const [noteData, setNoteData] = useState("");
-  const [newNote, setNewNote] = useState(
-      {comment: "",
-        state_id: stateId
-        })
+export default function RankingsResults({ allStates, 
+// onAddNote, 
+// states, 
+// temps, 
+// cols, life, weed
+// stateProfiles
+}) {
+  // const [noteData, setNoteData] = useState("");
+  // const [newNote, setNewNote] = useState({comment: ""})
 
-  function handleNote(e){
-    setNoteData({...noteData, [e.target.name]: e.target.value})
-    setNewNote({...noteData, [e.target.name]: e.target.value})
-  }
 
-    function handleFormSubmit(e){
-    e.preventDefault()
-    console.log(noteData)
+  
 
-    fetch('http://localhost:9292/notes', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-          comment: comment,
-          state_id: stateId,
-        })
-    })
-    .then(r => r.json())
-    .then(data => {
-      setNoteData(onAddNote)
-    })
-  }
+  // function handleNote(e){
+  //   setNoteData({...noteData, [e.target.name]: e.target.value})
+  //   setNewNote({...noteData, [e.target.name]: e.target.value})
+  // }
+    // console.log(temps)
+    // console.log(states)
+
+  //   function handleFormSubmit(e){
+  //   e.preventDefault()
+  //   console.log(noteData)
+
+  //   fetch('http://localhost:9292/notes', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({newNote})
+  //   })
+  //   .then(r => r.json())
+  //   .then(data => {
+  //     setNoteData(onAddNote)
+  //   })
+  // }
+
+//   const stateList = states.map((state) => (
+//         <RankingCard key={state.id} state={state} />
+// ))
+        
+
+//   const tempList= temps.map((temp) => (
+//         <RankingCard key={temp.id} temp={temp} />
+//         ))
 
   return (
      <div className='ranking-results'>
       <div className='ranking-card-grid'>
+        {/* {
+        stateProfiles.map((stateProfile) => (
+        <RankingCard key={stateProfile.id} stateProfile={stateProfile} />
+        ))
+        } */}
+
         {
-        allStates.map((allState) => (
-        <RankingCard key={allState.id} allState={allState} handleNote={handleNote} handleFormSubmit={handleFormSubmit}/>
-      ))
+  allStates["state"] ? 
+        allStates.state.map((allState,i) => (
+        <RankingCard key={i} allState={allState} 
+// handleNote={handleNote} handleFormSubmit={handleFormSubmit}
+/>
+      )): ""
         }
       </div>
     </div>
