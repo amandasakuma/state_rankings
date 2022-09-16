@@ -1,8 +1,14 @@
-State Stuff (Fix title lol)
-A React Frontend/Ruby Backend Project
-By Matt Dittes and Amanda Sakuma
+#State Stuff (Fix title lol)
 
-Description of project/user experience
+##A React Frontend/Ruby Backend Project
+###By Matt Dittes and Amanda Sakuma
+
+A site where Users can view information and rankings for each US state based on:
+  - Average Yearly Temperature
+  - Average Cost of Living
+  - Average Life Expectancy
+  - Marijuana Laws
+ Additionally, Notes section allows Users to add and/or delete comments associated with each state.
 
 Backend server:
   https://github.com/mdittes/phase-3-sinatra-react-project
