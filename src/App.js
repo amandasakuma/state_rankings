@@ -11,7 +11,7 @@ import Notes from './Components/Notes';
 function App() {
   return (
   <div >
-    <h1 className="App-title">State Rankings</h1>
+    <h1 className="App-title"></h1>
     <NavBar />
       {/* <Header /> */}
         <Switch>

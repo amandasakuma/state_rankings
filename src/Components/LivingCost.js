@@ -11,15 +11,15 @@ export default function LivingCost() {
     }, [])
 
    const colList = cols.map((col => {
-      return (<li className="state-card">
-              <h3 key={col.id} col={col}>{col.state_name}</h3>
+      return (<div className="state-card">
+              <h3><span className="state-rank" key={col.id}>{col.id}.</span> {col.state_name}</h3>
               <p>Cost of Living Index: {col.cost_index}</p>
               <p>Grocery Costs: {col.grocery_cost}</p>
               <p>Housing Costs: {col.housing_cost}</p>
               <p>Utilities Costs: {col.utilities_cost}</p>
               <p>Transportation Costs: {col.transportation_cost}</p>
               <p>Miscellaneous Costs: {col.misc_cost}</p>
-              </li>
+              </div>
             )              
     }))
 

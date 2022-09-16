@@ -11,10 +11,10 @@ export default function LifeExpectancy() {
     }, [])
 
    const livesList = lives.map((life => {
-      return (<li className="state-card">
-              <h3 key={life.id} life={life}>{life.state_name}</h3>
+      return (<div className="state-card">
+              <h3><span className="state-rank" key={life.id}>{life.id}.</span> {life.state_name}</h3>
               <p>Life Expectancy: {life.life_expectancy}</p>
-              </li>
+              </div>
             )              
     }))
 

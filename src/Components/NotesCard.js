@@ -11,9 +11,9 @@ export default function NotesCard({note, onDeleteNote, id, states}) {
   }
   return (
     <div className="note-card">
-      <p>State: {note.state}</p>
+     <h3><span className='delete-note'><button onClick={deleteNote} className="delete-button">X</button></span><span className="note-state">STATE: </span> {note.state}</h3>
       <p className="note">{note.comment}</p>
-      <button onClick={deleteNote} className="delete-button">X</button>
+      
     </div>
   );
 }

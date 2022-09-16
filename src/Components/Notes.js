@@ -43,17 +43,19 @@ const [getState, setGetState] = useState("")
     <div>
       <div className="category-container">
          <select className='states' onChange={(e) => handleStates(e)}>
-            <option value="states" >States</option>
+            <option value="states" >State</option>
           {
           states.map((state) => 
             <option key={state.id} data-statename={state.name} value={state.id}>{state.name}</option>  
           )} 
           </select>
+        <span><NotesForm getState={getState} onAddNote={handleNewNote}/></span>
       </div>
-      <NotesForm getState={getState} onAddNote={handleNewNote}/>
-      {notes.map((note) => (
-        <NotesCard key={note.id} id={note.id} note={note} states={states} onDeleteNote={handleDeleteNote}/>
-      ))}
+      <div className="notes-container">
+        {notes.map((note) => (
+          <NotesCard key={note.id} id={note.id} note={note} states={states} onDeleteNote={handleDeleteNote}/>
+        ))}
+      </div>
     </div>
   )
 }
