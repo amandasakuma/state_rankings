@@ -1,8 +1,9 @@
 # State Stuff (Fix title lol)
 
-**A React Frontend/Ruby Backend Project
+**A React Frontend & Ruby/Sinatra Backend Project
 By Matt Dittes and Amanda Sakuma**
 
+### Description
 A site where Users can view information and rankings for each US state based on:
   - Average Yearly Temperature
   - Average Cost of Living
@@ -11,9 +12,10 @@ A site where Users can view information and rankings for each US state based on:
  
  Additionally, Notes section allows Users to add and/or delete comments associated with each state.
 
-**Backend server:**
+### Backend server
+  A Sinatra API backend using Active Record:
   https://github.com/mdittes/phase-3-sinatra-react-project
-  (Server will run at "http://localhost:9292")
+  (Server will run at port: "http://localhost:9292")
   
 Our Wireframe:
   
