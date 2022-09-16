@@ -5,7 +5,8 @@ import NotesForm from './NotesForm'
 export default function Notes() {
   const [notes, setNotes] = useState([])
   const [states, setStates] = useState([])
-const [getState, setGetState] = useState("")
+  const [getState, setGetState] = useState("")
+
   //Get request to grab comments
   useEffect(() => {
     fetch("http://localhost:9292/notes")
@@ -35,11 +36,9 @@ const [getState, setGetState] = useState("")
     let stateId = e.target.value;
     let stateName = e.target[e.target.selectedIndex].dataset.statename;
     setGetState({id: stateId, name: stateName})
-
   }
 
   return (
-
     <div>
       <div className="category-container">
          <select className='states' onChange={(e) => handleStates(e)}>
