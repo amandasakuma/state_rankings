@@ -1,6 +1,6 @@
 # State Stuff (Fix title lol)
 
-**A React Frontend & Ruby/Sinatra Backend Project
+**A React Frontend & Ruby/Sinatra Backend Project <br />
 By Matt Dittes and Amanda Sakuma**
 
 ### Description
@@ -13,8 +13,8 @@ A site where Users can view information and rankings for each US state based on:
  Additionally, Notes section allows Users to add and/or delete comments associated with each state.
 
 ### Backend server
-  A Sinatra API backend using Active Record:
-  https://github.com/mdittes/phase-3-sinatra-react-project
+  A Sinatra API backend using Active Record: <br />
+  https://github.com/mdittes/phase-3-sinatra-react-project <br />
   (Server will run at port: "http://localhost:9292")
   
 Our Wireframe:
