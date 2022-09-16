@@ -41,14 +41,14 @@ return (
         </div>
 
           {stateId} */}
-        <RankingsCategories 
-            // stateProfiles={all}
-          // states={all.State}
-          // temps={all.Temperature}
-          // cols={all.LivingCost}
-          // life={all.LifeExpectancy}
-          // weed={all.MarijuanaLaw}
-          />
+        {/* <RankingsCategories 
+            stateProfiles={all}
+          states={all.State}
+          temps={all.Temperature}
+          cols={all.LivingCost}
+          life={all.LifeExpectancy}
+          weed={all.MarijuanaLaw}
+          /> */}
       </div>
   )
 }

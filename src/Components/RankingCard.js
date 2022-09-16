@@ -1,52 +1,53 @@
 import React, {useState, useEffect} from 'react'
 
 
-export default function RankingCard({allState, handleNote, handleFormSubmit, 
+export default function RankingCard({
+// allState, handleNote, handleFormSubmit, 
 // stateProfile
 // state,
 // temp
 }) {
-  const [comments, setComments] = useState([])
-  const [newComment, setNewComment] = useState('')
+//   const [comments, setComments] = useState([])
+//   const [newComment, setNewComment] = useState('')
 
-  useEffect(() => {
-    fetch("http://localhost:9292/notes")
-      .then((res) => res.json())
-      .then((data) => setComments(data))
-      .catch(console.error);
-  }, []);
+//   useEffect(() => {
+//     fetch("http://localhost:9292/notes")
+//       .then((res) => res.json())
+//       .then((data) => setComments(data))
+//       .catch(console.error);
+//   }, []);
 
-const handleSubmitComment = (e) => {
-    e.preventDefault();
-    fetch('http://localhost:9292/notes', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({comment: newComment, state_id: allState.id})
-    })
-    .then(r => r.json())
-    .then((data) => {
-        console.log(data);
-          setNewComment("")
-})
+// const handleSubmitComment = (e) => {
+//     e.preventDefault();
+//     fetch('http://localhost:9292/notes', {
+//       method: 'POST',
+//       headers: {
+//         'Content-Type': 'application/json'
+//       },
+//       body: JSON.stringify({comment: newComment, state_id: allState.id})
+//     })
+//     .then(r => r.json())
+//     .then((data) => {
+//         console.log(data);
+//           setNewComment("")
+// })
 // (addComment => {
 //       handleAddComment(addComment)
 //       setNewComment("");
     
    
-  }
+  // }
 
-    function handleAddComment(comment) { 
-      setComments([...comments, comment])    
-    }
+  //   function handleAddComment(comment) { 
+  //     setComments([...comments, comment])    
+  //   }
 
 
   return (
     <div className='ranking-card'>
-      <div>
+      {/* <div>
         <ol>
-          {allState.name}
+          {allState.name} */}
           {/* {allState.life_expectancy_id} */}
           {/* .......... */}
       {/* <form 
@@ -59,8 +60,8 @@ const handleSubmitComment = (e) => {
         </textarea>                
         <input type="submit" value='Notes'></input>            
     </form> */}
-        </ol>
-      </div>
+        {/* </ol> */}
+      {/* </div> */}
           {/* <form >
             <input type="text" 
                 // value={value}

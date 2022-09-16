@@ -11,7 +11,7 @@ export default function WeedLaws() {
     }, [])
 
    const weedList = weeds.map((weed => {
-      return (<li>
+      return (<li className="state-card">
                  <h3 key={weed.id} weed={weed}>{weed.state_name}</h3>
                 <p>Legal Weed status: {weed.legal_weed_status}</p>
                 <p>Medical marijuana?: {weed.medicinal_weed_status ? "Yes" : "No"}</p>
@@ -22,7 +22,7 @@ export default function WeedLaws() {
 
   return (
     <div>
-        <ol>
+        <ol className='state-list'>
         {weedList}
         </ol>
     </div>

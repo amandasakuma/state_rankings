@@ -11,17 +11,18 @@ export default function Temperature() {
     }, [])
 
    const tempList = temps.map((temp => {
-      return (<li>
-              <h3 key={temp.id} temp={temp}>{temp.state_name}</h3>
+      return (<div className="state-card">
+              <h2>{temp.ranking}. </h2>
+              <h3>{temp.state_name}</h3>
               <p>Average Temperature: {temp.temperature}°F</p>
               <p>Temp Scale: {temp.temp_scale}</p>
-              </li>
+              </div>
             )              
     }))
 
   return (
     <div>
-        <ol>
+        <ol className='state-list'>
         {tempList}
         </ol>
     </div>

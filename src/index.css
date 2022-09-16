@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap");
+ 
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eaeaeaff;
 }
 
 code {
@@ -29,7 +33,48 @@ h1 {
 }
 
 
+.notes-nav {
+   margin: 0px;
+    margin-top: 80px;
+}
 
+
+.state-list {
+  
+  margin-left: 200px;
+}
+
+.state-card li {
+  font-size: 20px;
+}
+
+.state-card {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #444444;
+  padding: 10px;
+
+  /* background: linear-gradient(90deg, rgba(0,0,0,0.04) 12%, rgba(255,255,255,0) 0%); */
+}
+
+.state-card h2 {
+  font-family: 'Abril Fatface', cursive;
+  margin: 0;
+  position: absolute;
+  color: #5ea5b8ff;
+  font-size: 40px;
+}
+
+.state-card h3 {
+  /* margin-top: .5em; */
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #4f6d7aff;
+}
+.state-card p {
+  margin-left: 5vw;
+	margin-bottom: 2vh;
+}
 
 .state-choice {
   display: flex;
@@ -37,7 +82,6 @@ h1 {
   width: 30%;
   padding: 10px
 }
-
 .states {
 margin: 20px; 
 } 

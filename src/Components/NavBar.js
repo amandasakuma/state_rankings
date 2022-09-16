@@ -8,7 +8,8 @@ export default function NavBar() {
             to="marijunalaws"
             exact
             activeStyle={{
-                background: "#FFDA7A",
+                // background: "#4f6d7aff",
+
                 padding: "5px",
             }}
             className = "navTitles"
@@ -19,7 +20,7 @@ export default function NavBar() {
             to="temperature"
             exact
             activeStyle={{
-                background: "#FFDA7A",
+                // background: "#4f6d7aff",
                 padding: "5px",
             }}
             className = "navTitles"
@@ -30,7 +31,7 @@ export default function NavBar() {
             to="livingcost"
             exact
             activeStyle={{
-                background: "#FFDA7A",
+                // background: "#4f6d7aff",
                 padding: "5px",
             }}
             className = "navTitles"
@@ -41,7 +42,7 @@ export default function NavBar() {
             to="life"
             exact
             activeStyle={{
-                background: "#FFDA7A",
+                // background: "#4f6d7aff",
                 padding: "5px",
             }}
             className = "navTitles"
@@ -51,11 +52,11 @@ export default function NavBar() {
           <NavLink
             to="notes"
             exact
-            activeStyle={{
-                background: "#FFDA7A",
-                padding: "5px",
-            }}
-            className = "navTitles"
+            // activeStyle={{
+            //     background: "#FFDA7A",
+            //     padding: "5px",
+            // }}
+            className = "notes-nav"
             >
         Notes
         </NavLink>
