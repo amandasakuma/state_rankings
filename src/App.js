@@ -5,7 +5,7 @@ import LifeExpectancy from './Components/LifeExpectancy';
 import LivingCost from './Components/LivingCost';
 import Temperature from './Components/Temperature';
 import WeedLaws from './Components/WeedLaws';
-import Favorites from './Components/Favorites';
+import Notes from './Components/Notes';
 
 
 function App() {
@@ -27,8 +27,8 @@ function App() {
           <Route path="/life">
             <LifeExpectancy />
           </Route>
-          <Route path="/favorites">
-            <Favorites />
+          <Route path="/notes">
+            <Notes />
           </Route>
         </Switch>
   </div>
