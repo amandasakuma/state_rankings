@@ -5,12 +5,21 @@ export default function NavBar() {
   return (
     <div className="navBar">
         <NavLink
+            to="/"
+            exact
+            activeStyle={{
+                // color: "#4f6d7aff",
+            }}
+            className = "app-title"
+            >
+        State Rankings
+        </NavLink>
+        <NavLink
             to="marijunalaws"
             exact
             activeStyle={{
+                color: "#eaeaeaff",
                 // background: "#4f6d7aff",
-
-                padding: "5px",
             }}
             className = "navTitles"
             >
@@ -20,8 +29,8 @@ export default function NavBar() {
             to="temperature"
             exact
             activeStyle={{
+                color: "#eaeaeaff",
                 // background: "#4f6d7aff",
-                padding: "5px",
             }}
             className = "navTitles"
             >
@@ -31,8 +40,8 @@ export default function NavBar() {
             to="livingcost"
             exact
             activeStyle={{
+              color: "#eaeaeaff",
                 // background: "#4f6d7aff",
-                padding: "5px",
             }}
             className = "navTitles"
             >
@@ -42,8 +51,8 @@ export default function NavBar() {
             to="life"
             exact
             activeStyle={{
+              color: "#eaeaeaff",
                 // background: "#4f6d7aff",
-                padding: "5px",
             }}
             className = "navTitles"
             >

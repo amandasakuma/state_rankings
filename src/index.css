@@ -16,28 +16,42 @@ code {
     monospace;
 }
 
-h1 {
-  text-align: center;
+.app-title {
+  text-transform: uppercase;
+  font-family: 'Abril Fatface', cursive;
+  margin-top: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
 }
 .navBar {
+  height: 60px;
+  width: 100%;
   display: flex;
+  position: relative;
+  padding: 0.5rem 0rem;
+  /* margin-left: auto; */
   justify-content: space-evenly;
-  font-size: 20px;
+  /* font-size: 20px; */
+   background: linear-gradient(45deg, #5ea5b8ff 0%, #4f6d7aff 100%);
+  /* overflow: hidden; */
+  /* width: 600px; */
 }
 
 .navTitles {
-  margin: 0px;
-  margin-top: 40px;
+  /* text-transform: uppercase; */
+    font-size: 16px;
+   font-family: 'Montserrat', sans-serif; 
+  margin-top: 23px;
   color: black;
   text-decoration: none;
+  text-align: right;
 }
-
 
 .notes-nav {
    margin: 0px;
     margin-top: 80px;
 }
-
 
 .state-list {
   margin-left: 200px;
@@ -56,10 +70,10 @@ h1 {
   /* background: linear-gradient(90deg, rgba(0,0,0,0.04) 12%, rgba(255,255,255,0) 0%); */
 }
 
-.state-card h2 {
+.state-rank {
   font-family: 'Abril Fatface', cursive;
   margin: 0;
-  position: absolute;
+  /* position: absolute; */
   color: #5ea5b8ff;
   font-size: 40px;
 }
@@ -103,7 +117,7 @@ margin: 20px;
   margin: 5px;
 }
 
-.category-buttons {
+/* .category-buttons {
     display: inline-block;
     padding: 0.3em 1.2em;
     margin: 0 5px 0.3em 5px;
@@ -113,20 +127,20 @@ margin: 20px;
     color: #444444;
     text-align: center;
     transition: all 0.2s;
-}
+} */
 
-.ultimate-state-ranking {
+/* .ultimate-state-ranking {
   text-align: center;
   margin-top: 50px;
-}
+} */
 
-.ranking-card-grid {
-  display: grid;
+/* .ranking-card-grid {
+  display: grid; */
   /* grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr); */
-  margin-left: 100px
-}
+  /* margin-left: 100px
+} */
 
-.ranking-card {
+/* .ranking-card {
 /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
-}
+/* } */
