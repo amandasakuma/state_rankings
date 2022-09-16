@@ -1,4 +1,4 @@
-# State Stuff (Fix title lol)
+# State Rankings
 
 **A React Frontend & Ruby/Sinatra Backend Project <br />
 By Matt Dittes and Amanda Sakuma**
