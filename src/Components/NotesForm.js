@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
-const initialForm = {comment: ""}
 
-export default function NotesForm({onAddNote}) {
-  const [noteData, setNoteData] = useState(initialForm)
+export default function NotesForm({ getState, onAddNote }) {
+  const [noteData, setNoteData] = useState({ comment: "" })
 
   function handleChange(event) {
     setNoteData({
@@ -11,14 +10,13 @@ export default function NotesForm({onAddNote}) {
       [event.target.name]: event.target.value,
     });
   }
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const newNote = {
-      comment: noteData.comment
-  };
-
+      comment: noteData.comment,
+      state_id: getState.id
+    };
     fetch('http://localhost:9292/notes', {
       method: 'POST',
       headers: {
@@ -27,15 +25,15 @@ export default function NotesForm({onAddNote}) {
       body: JSON.stringify(newNote)
     })
       .then(res => res.json())
-        .then(onAddNote)
-        .then(setNoteData(initialForm))
+      .then((data)=>onAddNote({...data, state: getState.name}))
+      .then(()=>setNoteData({ comment: "" }))
   }
-  
+
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit} className="notes-form">
         <div>
-          <input 
+          <input
             type="text"
             name="comment"
             placeholder="Comment"
