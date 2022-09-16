@@ -11,11 +11,14 @@ A site where Users can view information and rankings for each US state based on:
  
  Additionally, Notes section allows Users to add and/or delete comments associated with each state.
 
-Backend server:
+**Backend server:**
   https://github.com/mdittes/phase-3-sinatra-react-project
   (Server will run at "http://localhost:9292")
   
-Insert wireframe image 
+Our Wireframe:
   
 Our React Component Tree:
 <img width="889" alt="Screen Shot 2022-09-16 at 11 42 35 AM" src="https://user-images.githubusercontent.com/108034440/190678453-27d9e7d4-9879-48b3-afb9-7d2d27912ab1.png">
+
+State information initially pulled from https://worldpopulationreview.com/states to create tables in seeds.rb file on the backend.
+
