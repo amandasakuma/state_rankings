@@ -12,7 +12,7 @@ export default function NavBar() {
             }}
             className = "app-title"
             >
-        State Rankings
+        State rankings
         </NavLink>
         <NavLink
             to="marijunalaws"
