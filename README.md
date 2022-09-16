@@ -1,7 +1,7 @@
-#State Stuff (Fix title lol)
+# State Stuff (Fix title lol)
 
-##A React Frontend/Ruby Backend Project
-###By Matt Dittes and Amanda Sakuma
+## A React Frontend/Ruby Backend Project
+### By Matt Dittes and Amanda Sakuma
 
 A site where Users can view information and rankings for each US state based on:
   - Average Yearly Temperature
