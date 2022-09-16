@@ -51,6 +51,11 @@ code {
 .notes-nav {
    margin: 0px;
     margin-top: 80px;
+  font-family: 'Abril Fatface', cursive;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .state-list {
@@ -89,15 +94,80 @@ code {
 	margin-bottom: 2vh;
 }
 
+.note-state {
+  font-family: 'Montserrat', sans-serif;
+  color: #0a0a0a;
+  margin: 0;
+  font-size: 13px;
+}
+.note-card h3 {
+  font-family: 'Abril Fatface', cursive;
+  margin: 0;
+  color: #5ea5b8ff;
+  font-size: 20px;
+}
+
+.note-card {
+  margin: 20 0px 40 0px;
+}
+
+.delete-note {
+  margin: 10px;
+}
+
+.note {
+  font-family: 'Montserrat', sans-serif;
+  color: #444444;
+  margin-left: 45px;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.category-container {
+  text-align: center;
+}
+
+.states {
+margin-top: 30px; 
+} 
+
+.form-submit {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 8px 5px 0.3em 5px;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #444444;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+
+.notes-form {
+ display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 8px 5px 0.3em 5px;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 .state-choice {
   display: flex;
   margin: auto; 
   width: 30%;
   padding: 10px
 }
-.states {
-margin: 20px; 
-} 
+
+.notes-container {
+  padding: 10px; 
+  margin-left: 70px;
+}
+
+
+
+
 
 .ranking-category-container {
   padding: 10px; 

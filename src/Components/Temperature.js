@@ -12,7 +12,7 @@ export default function Temperature() {
 
    const tempList = temps.map((temp => {
       return (<div className="state-card">
-              <h3><span class="state-rank">{temp.ranking}.</span> {temp.state_name}</h3>
+              <h3><span className="state-rank">{temp.ranking}.</span> {temp.state_name}</h3>
               <p>Average Temperature: {temp.temperature}°F</p>
               <p>Temp Scale: {temp.temp_scale}</p>
               </div>
